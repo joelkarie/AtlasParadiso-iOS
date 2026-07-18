@@ -15,7 +15,7 @@ struct Location: Codable, Identifiable {
     let locationTypeId: Int
     let latitude: Double
     let longitude: Double
-    let stateProvinceId: String
+    let stateProvince: String
     let country: String
     let joelCouldLive: Bool?
     let michaelCouldLive: Bool?
@@ -30,7 +30,7 @@ struct Location: Codable, Identifiable {
         case locationTypeId = "location_type_id"
         case latitude
         case longitude
-        case stateProvinceId = "state_province_id"
+        case stateProvince = "state_province_id"
         case country
         case joelCouldLive = "joel_could_live"
         case michaelCouldLive = "michael_could_live"
