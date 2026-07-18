@@ -22,6 +22,7 @@ struct Location: Codable, Identifiable {
     let joelStarRating: Int?
     let michaelStarRating: Int?
     
+    
     enum CodingKeys: String, CodingKey {
         case id
         case name
