@@ -30,7 +30,7 @@ struct Location: Codable, Identifiable {
         case locationTypeId = "location_type_id"
         case latitude
         case longitude
-        case stateProvince = "state_province_id"
+        case stateProvince = "state_province"
         case country
         case joelCouldLive = "joel_could_live"
         case michaelCouldLive = "michael_could_live"

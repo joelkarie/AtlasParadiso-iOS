@@ -17,9 +17,7 @@ final class APIClient {
         let url = API.baseURL.appendingPathComponent("locations")
         
         let (data,_) = try await URLSession.shared.data(from: url) // The tuple is the body and the response (ie. 404, 500)
-        
         let decoder = JSONDecoder()
-        
         return try decoder.decode([Location].self, from: data)
     }
 }

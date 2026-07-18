@@ -22,7 +22,13 @@ struct HomeView: View {
                 Spacer()
                 
                 VStack(spacing: 16) {
-                    FeatureCard(icon: "mappin.and.ellipse", title: "Locations", subtitle: "Places we've been to.")
+//                    FeatureCard(icon: "mappin.and.ellipse", title: "Locations", subtitle: "Places we've been to.")
+                    NavigationLink {
+                        
+                        LocationListView()
+                    } label: {
+                        FeatureCard(icon: "mappin.and.ellipse", title: "Location", subtitle: "Places we've discovered.")
+                    }
                     
                     FeatureCard(icon: "theatermasks", title: "Theatres", subtitle: "Stages we've worked at.")
                     
