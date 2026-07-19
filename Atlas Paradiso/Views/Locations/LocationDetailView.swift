@@ -39,6 +39,21 @@ struct LocationDetailView: View {
                     Text(stars(for: location.michaelStarRating))
                 }
             }
+            
+            Section("Highlights") {
+                
+                HStack {
+                    Text("Joel")
+                    Spacer()
+                    Text(location.joelHighlights ?? "-")
+                }
+                
+                HStack {
+                    Text("Michael")
+                    Spacer()
+                    Text(location.michaelHighlights ?? "-")
+                }
+            }
                 
             Section("Coordinates") {
                     
@@ -81,7 +96,9 @@ struct LocationDetailView: View {
                 joelCouldLive: false,
                 michaelCouldLive: nil,
                 joelStarRating: 4,
-                michaelStarRating: nil
+                michaelStarRating: nil,
+                joelHighlights: "-",
+                michaelHighlights: "-"
             )
         )
     }

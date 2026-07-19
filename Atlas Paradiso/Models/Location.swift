@@ -21,6 +21,8 @@ struct Location: Codable, Identifiable {
     let michaelCouldLive: Bool?
     let joelStarRating: Int?
     let michaelStarRating: Int?
+    let joelHighlights: String?
+    let michaelHighlights: String?
     
     
     enum CodingKeys: String, CodingKey {
@@ -37,5 +39,7 @@ struct Location: Codable, Identifiable {
         case michaelCouldLive = "michael_could_live"
         case joelStarRating = "joel_star_rating"
         case michaelStarRating = "michael_star_rating"
+        case joelHighlights = "joel_highlights"
+        case michaelHighlights = "michael_highlights"
     }
 }

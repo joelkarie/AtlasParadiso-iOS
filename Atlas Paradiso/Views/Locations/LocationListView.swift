@@ -15,30 +15,14 @@ struct LocationListView: View {
         
         List(viewModel.locations) { location in
             
-            //            VStack(alignment: .leading) {
-            //                
-            //                Text(location.name)
-            //                    .font(.headline)
-            //                
-            //                Text("\(location.stateProvince), \(location.country)")
-            //                    .font(.subheadline)
-            //                    .foregroundStyle(.secondary)
-            //            }
-            //        }
             NavigationLink {
                 
                 LocationDetailView(location: location)
                 
             } label: {
                 
-                VStack(alignment: .leading) {
-                    Text(location.name)
-                        .font(.headline)
-                    
-                    Text("\(location.stateProvince), \(location.country)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
+                LocationRow(location: location)                
+
             }
         }
         .navigationTitle("Locations")
