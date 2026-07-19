@@ -14,7 +14,7 @@ struct MainTabView: View {
                 .tabItem{
                     Label("Explpre", systemImage: "globe.americas.fill")
                 }
-            Text("Map")
+            MapView()
                 .tabItem{
                     Label("Map", systemImage: "map.fill")
                 }
