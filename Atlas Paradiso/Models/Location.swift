@@ -42,4 +42,14 @@ struct Location: Codable, Identifiable {
         case joelHighlights = "joel_highlights"
         case michaelHighlights = "michael_highlights"
     }
+    
+    var imageURL: URL? {
+        
+        API.baseURL
+            .appendingPathComponent("static")
+            .appendingPathComponent("images")
+            .appendingPathComponent("locations")
+            .appendingPathComponent("\(id)_location.webp")
+            
+    }
 }
