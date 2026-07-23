@@ -32,8 +32,8 @@
 		FDB07D98300A87ED00B11599 = {
 			isa = PBXGroup;
 			children = (
-				FDB07DA3300A87ED00B11599 /* Atlas Paradiso */,
 				FDB07DA2300A87ED00B11599 /* Products */,
+				FDB07DA3300A87ED00B11599 /* Atlas Paradiso */,
 			);
 			sourceTree = "<group>";
 		};
